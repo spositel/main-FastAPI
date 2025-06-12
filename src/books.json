@@ -1,0 +1,43 @@
+[
+  {
+    "id": 2,
+    "title": "\u041f\u0440\u0438\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0441\u043e\u0431\u0430\u043a\u0438",
+    "author": "\u0410\u0432\u0442\u043e\u0440\u0438\u0449\u0435 \u044f",
+    "year": 1993,
+    "genre": "string",
+    "pages": 0,
+    "available": true
+  },
+  {
+    "id": 1,
+    "title": "\u041d\u043e\u0432\u043e\u0435 \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+    "author": "\u041d\u043e\u0432\u044b\u0439 \u0430\u0432\u0442\u043e\u0440",
+    "year": 2023,
+    "genre": "\u041d\u043e\u0432\u044b\u0439 \u0436\u0430\u043d\u0440",
+    "pages": 301,
+    "available": true
+  },
+  {
+    "id": 3,
+    "title": "\u041f\u0440\u0438\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0441\u0442\u0443\u043b\u0430",
+    "author": "\u0410\u0432\u0442\u043e\u0440\u0438\u0449\u0435 \u044f",
+    "year": 1994,
+    "genre": "string",
+    "pages": 0,
+    "available": true
+  },
+  {
+    "id": 4,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling",
+    "year": 1997,
+    "genre": "fantasy",
+    "pages": 432,
+    "available": true,
+    "extra_data": {
+      "cover": "https://covers.openlibrary.org/b/id/10521270-M.jpg",
+      "description": "Harry Potter #1\r\n\r\nWhen mysterious letters start arriving on his doorstep, Harry Potter has never heard of Hogwarts School of Witchcraft and Wizardry.\r\n\r\nThey are swiftly confiscated by his aunt and uncle.\r\n\r\nThen, on Harry\u2019s eleventh birthday, a strange man bursts in with some important news: Harry Potter is a wizard and has been awarded a place to study at Hogwarts.\r\n\r\nAnd so the first of the Harry Potter adventures is set to begin.\r\n([source][1])\r\n\r\n\r\n  [1]: https://www.jkrowling.com/book/harry-potter-philosophers-stone/",
+      "rating": null
+    }
+  }
+]
