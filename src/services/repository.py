@@ -1,7 +1,8 @@
 import json
 import logging
+import os
 from abc import ABC, abstractmethod
-from typing import List, Dict, Any
+from typing import List
 
 logger = logging.getLogger(__name__)
 
@@ -47,6 +48,9 @@ class FileBookRepository(BookRepository):
         except IOError as e:
             logger.error(f"Error writing books: {e}")
 
+
+current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+db_path = os.path.join(current_dir, "..", "books.json")
 # Глобальный экземпляр репозитория
 _repository = FileBookRepository("books.json")
 

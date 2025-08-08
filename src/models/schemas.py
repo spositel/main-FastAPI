@@ -1,5 +1,40 @@
-from pydantic import BaseModel
+#from pydantic import BaseModel
+#from typing import Optional
+
+from pydantic import BaseModel, HttpUrl
 from typing import Optional
+from enum import Enum
+
+class AvailabilityStatus(str, Enum):
+    AVAILABLE = "available"
+    BORROWED = "borrowed"
+
+class StorageType(str, Enum):
+    FILE = "file"
+    JSONBIN = "jsonbin"
+    DB = "db"
+
+class BookFilter(BaseModel):
+    author: Optional[str] = None
+    genre: Optional[str] = None
+    availability: Optional[AvailabilityStatus] = None
+    limit: Optional[int] = None
+    offset: Optional[int] = None
+
+    class Config:
+        extra = "forbid"
+        json_schema_extra = {
+            "example": {
+                "author": "Достоевский",
+                "genre": "Роман",
+                "availability": "available",
+                "limit": 10,
+                "offset": 0
+            }
+        }
+
+
+
 
 class BookShort(BaseModel):
     id: int 

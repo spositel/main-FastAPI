@@ -2,9 +2,15 @@ from fastapi import APIRouter, HTTPException
 from typing import List, Optional
 from src.models.schemas import BookShort, BookFull, BookUpdate
 from src.services.repository import get_book_repository
-from src.services.api_client import get_api_client
+
 
 router = APIRouter()
+
+@router.get("/")
+async def root():
+    """Корневой маршрут, возвращающий приветственное сообщение."""
+    #logger.info("Запрос к корневому маршруту")
+    return {"message": "Добро пожаловать в API библиотечного каталога"}
 
 @router.get("/books", response_model=List[BookShort])
 async def get_books(
